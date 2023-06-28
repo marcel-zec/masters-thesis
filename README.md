@@ -22,9 +22,8 @@ The outcome of this research is a systematic approach to transforming business 
 - installed Camunda modeler
    - download: https://camunda.com/download/modeler/
 
-Launching Self-managed Camunda
-Postup spustenia Self-managed verzie Camundy
-1. download Camunda repository in version 8.2.4 as ZIP or clone project C
+#### Launch Self-managed Camunda
+1. download Camunda repository in version 8.2.4 as ZIP or clone project
    -  download: https://github.com/camunda/camunda-platform/tree/8.2.4
    ![DownloadCamunda](download-camunda.png)
 2. in the command line (PowerShell, Terminal) we move to the project
@@ -40,3 +39,19 @@ Postup spustenia Self-managed verzie Camundy
    - Operate http://localhost:8081/ 
    - Tasklist http://localhost:8082/
    ![TasklistGUI](tasklist-gui.png)
+
+#### Deploy diagrams
+1. download this repository as ZIP or clone project 
+2. open all diagrams from `camundaProject/bpmn` and `camundaProject/dmn` in Camunda Modeler
+3. deploy all diagrams
+
+#### Launch server
+1. (download this repository as ZIP or clone project)
+2. in the command line (PowerShell, Terminal) we move to project folder 
+   - command: `cd server`
+3. run the command `npm install`, that will install all dependencies
+4. run the command `node index.js`, that will start server
+   ![Server](server.png)
+5. check the interface functionality (http://localhost:3000/)
+
+![ServerGUI](server-gui.png)
