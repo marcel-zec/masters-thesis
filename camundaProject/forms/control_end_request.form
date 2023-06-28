@@ -1,0 +1,112 @@
+{
+  "components": [
+    {
+      "text": "## Customer info",
+      "type": "text",
+      "layout": {
+        "row": "Row_2txb4t0",
+        "columns": null
+      },
+      "id": "Field_38kzkb0"
+    },
+    {
+      "text": "Order n.: {{order.id}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1rqh86i",
+        "columns": null
+      },
+      "id": "Field_2jyy35x"
+    },
+    {
+      "text": "Customer name: {{customer.name}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1rqh86i",
+        "columns": null
+      },
+      "id": "Field_1nfcl37"
+    },
+    {
+      "text": "## Boat info",
+      "type": "text",
+      "layout": {
+        "row": "Row_2p4b97q",
+        "columns": null
+      },
+      "id": "Field_1is0283"
+    },
+    {
+      "text": "Boat: {{boat.name}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1cbahp7",
+        "columns": null
+      },
+      "id": "Field_2qjdwsx"
+    },
+    {
+      "text": "Dock number: {{boat.dockNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_12s2191",
+        "columns": null
+      },
+      "id": "Field_2epubow"
+    },
+    {
+      "text": "## Control end",
+      "type": "text",
+      "layout": {
+        "row": "Row_1f0tkvp",
+        "columns": null
+      },
+      "id": "Field_0mmui6i"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "1"
+        },
+        {
+          "label": "No",
+          "value": "2"
+        }
+      ],
+      "label": "Customer ends control upon request",
+      "type": "radio",
+      "layout": {
+        "row": "Row_0kzglxo",
+        "columns": null
+      },
+      "id": "Field_1lxgc70",
+      "key": "control_end",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Comment on the rejection",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_03ufv35",
+        "columns": null
+      },
+      "id": "Field_1ferm5l",
+      "key": "field_0l0d8ia",
+      "conditional": {
+        "hide": "=control_end = \"1\" or control_end = null"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1q1jtvv",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

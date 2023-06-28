@@ -1,0 +1,65 @@
+{
+  "components": [
+    {
+      "text": "## Customer\nOrder n.: {{order.id}}\nCustomer name: {{customer.name}}\nPhone number: {{customer.phoneNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_0zmgder",
+        "columns": null
+      },
+      "id": "Field_1vjkzi7"
+    },
+    {
+      "values": [
+        {
+          "label": "Captain licence not valid ",
+          "value": "1"
+        },
+        {
+          "label": "Captain licence valid, missing crew list ",
+          "value": "2"
+        },
+        {
+          "label": "All documents are correct",
+          "value": "3"
+        }
+      ],
+      "label": "Documents controll",
+      "type": "radio",
+      "layout": {
+        "row": "Row_07ibgca",
+        "columns": null
+      },
+      "id": "Field_0c8s1ds",
+      "key": "documents",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Crew list number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_07ibgca",
+        "columns": null
+      },
+      "id": "Field_03prbz4",
+      "key": "crew_list_number",
+      "validate": {
+        "required": true
+      },
+      "conditional": {
+        "hide": "=not(documents = \"3\")"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Check_documents_form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

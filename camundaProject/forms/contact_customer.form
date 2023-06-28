@@ -1,0 +1,155 @@
+{
+  "components": [
+    {
+      "text": "Order n.: {{order_id}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_0zmgder",
+        "columns": null
+      },
+      "id": "Field_2vjkzi7"
+    },
+    {
+      "text": "Customer name: {{customer_name}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1w4af1b",
+        "columns": null
+      },
+      "id": "Field_1u1anis"
+    },
+    {
+      "text": "Phone number: {{phone_number}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_15zk46y",
+        "columns": null
+      },
+      "id": "Field_1h88v43"
+    },
+    {
+      "text": "Make at least 3 phone call attempts between which there is a break of at least 15 minutes! ",
+      "type": "text",
+      "layout": {
+        "row": "Row_1vla11y",
+        "columns": null
+      },
+      "id": "Field_074qjc7"
+    },
+    {
+      "values": [
+        {
+          "label": "Unable to contact",
+          "value": "negative_contact"
+        },
+        {
+          "label": "Rescheduled boarding",
+          "value": "rescheduled_contact"
+        },
+        {
+          "label": "Canceled boarding",
+          "value": "canceled_contact"
+        }
+      ],
+      "label": "Contact result",
+      "type": "radio",
+      "id": "Field_0i4ndd7",
+      "key": "contact_result",
+      "validate": {
+        "required": true
+      },
+      "layout": {
+        "row": "Row_0r6jn4k"
+      }
+    },
+    {
+      "text": "Maximum is 3 days after {{start_date}}!",
+      "type": "text",
+      "layout": {
+        "row": "Row_0o4phla",
+        "columns": null
+      },
+      "id": "Field_1e4fvsx",
+      "conditional": {
+        "hide": "=not (contact_result = \"rescheduled_contact\")"
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "New boarding date",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0o4phla",
+        "columns": null
+      },
+      "id": "Field_04rm28b",
+      "key": "boarding_date",
+      "disallowPassedDates": true,
+      "validate": {
+        "required": true
+      },
+      "conditional": {
+        "hide": "=not (contact_result = \"rescheduled_contact\")"
+      }
+    },
+    {
+      "label": "Cancelation comments",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1lh5zq6",
+        "columns": null
+      },
+      "id": "Field_162hq9x",
+      "key": "field_098c9oc",
+      "conditional": {
+        "hide": "=not (contact_result = \"canceled_contact\")"
+      }
+    },
+    {
+      "label": "The time of the first phone call attempt",
+      "type": "textfield",
+      "id": "Field_1nu3h30",
+      "key": "field_157kjtl",
+      "layout": {
+        "row": "Row_1a9gdck"
+      },
+      "conditional": {
+        "hide": "=contact_result != \"negative_contact\""
+      }
+    },
+    {
+      "label": "The time of the second phone call attempt",
+      "type": "textfield",
+      "id": "Field_1nu3h3x",
+      "key": "field_157kjtx",
+      "layout": {
+        "row": "Row_1a9gdck"
+      },
+      "conditional": {
+        "hide": "=contact_result != \"negative_contact\""
+      }
+    },
+    {
+      "label": "The time of the third phone call attempt",
+      "type": "textfield",
+      "id": "Field_1nu3h3y",
+      "key": "field_157kjty",
+      "layout": {
+        "row": "Row_1a9gdck"
+      },
+      "conditional": {
+        "hide": "=contact_result != \"negative_contact\""
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Abc",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

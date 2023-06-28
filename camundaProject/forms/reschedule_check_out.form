@@ -1,0 +1,56 @@
+{
+  "components": [
+    {
+      "label": "Order ID",
+      "type": "textfield",
+      "id": "Field_1xcecha",
+      "key": "order_id",
+      "disabled": true
+    },
+    {
+      "values": [
+        {
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "Unable to contact",
+          "value": "unable-to-contact"
+        }
+      ],
+      "label": "Reschedule required",
+      "type": "radio",
+      "id": "Field_04xf0ee",
+      "key": "reschedule_accept",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Rescheduled check-in (days)",
+      "type": "number",
+      "id": "Field_1kpph58",
+      "key": "field_11uccst"
+    },
+    {
+      "label": "Unable to contact",
+      "type": "textfield",
+      "id": "Field_1nu3h3x",
+      "key": "field_157kjxl",
+      "description": "Write the phone number and the number of attempts and their time."
+    }
+  ],
+  "type": "default",
+  "id": "Form_0mqrbwd",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "schemaVersion": 7
+}

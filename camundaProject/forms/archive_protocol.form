@@ -1,0 +1,81 @@
+{
+  "components": [
+    {
+      "text": "## Customer\nname:  {{customer.name}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_2joge6o",
+        "columns": null
+      },
+      "id": "Field_1uirf8b"
+    },
+    {
+      "text": "## Boat\ntype: {{boat.type}}\nname: {{boat.name}}\ncapacity: {{boat.capacity}}\ndock: {{boat.dockNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_2joge6o",
+        "columns": null
+      },
+      "id": "Field_2plt3d0"
+    },
+    {
+      "label": "Protocol number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xyfy5l",
+        "columns": null
+      },
+      "id": "Field_1of2y5o",
+      "key": "field_14kv812",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Reported problems",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1eed5mw",
+        "columns": null
+      },
+      "id": "Field_0mv1t1f",
+      "key": "field_0gepiq3"
+    },
+    {
+      "label": "Customer signature",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1r3tl3d",
+        "columns": null
+      },
+      "id": "Field_1j92764",
+      "key": "signed",
+      "defaultValue": true
+    },
+    {
+      "label": "Comment on signature decline",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0z0dl06",
+        "columns": null
+      },
+      "id": "Field_1kg2opq",
+      "key": "field_0jsrhiu",
+      "conditional": {
+        "hide": "=signed = true"
+      },
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_1q8x82e",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

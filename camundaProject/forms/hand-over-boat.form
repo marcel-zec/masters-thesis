@@ -1,0 +1,31 @@
+{
+  "components": [
+    {
+      "text": "## Customer\nOrder n.: {{order.id}}\nCustomer name: {{customer.name}}\nPhone number: {{customer.phoneNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1txb3t9",
+        "columns": null
+      },
+      "id": "Field_16kzkb0"
+    },
+    {
+      "text": "## Boat\ntype: {{boat.type}}\nname: {{boat.name}}\ncapacity: {{boat.capacity}}\ndock: {{boat.dockNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1txb3t9",
+        "columns": null
+      },
+      "id": "Field_1is9172"
+    }
+  ],
+  "type": "default",
+  "id": "Form_00pn83v",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

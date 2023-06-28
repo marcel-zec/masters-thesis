@@ -1,0 +1,85 @@
+{
+  "components": [
+    {
+      "text": "## Reported problem with boat",
+      "type": "text",
+      "layout": {
+        "row": "Row_17vh248",
+        "columns": null
+      },
+      "id": "Field_049ubvr"
+    },
+    {
+      "text": "{{reportedProblem}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ogcyjm",
+        "columns": null
+      },
+      "id": "Field_1vue71h"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "label": "Fixable",
+      "type": "radio",
+      "layout": {
+        "row": "Row_0kv2mcg",
+        "columns": null
+      },
+      "id": "Field_0zop7h5",
+      "key": "fixable"
+    },
+    {
+      "label": "Why is not fixable?",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0kv2mcg",
+        "columns": null
+      },
+      "id": "Field_0457vwt",
+      "key": "field_0e3fvau",
+      "conditional": {
+        "hide": "=not(fixable = \"no\")"
+      },
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "text": "## Boat\ntype: {{boat.type}}\nname: {{boat.name}}\ncapacity: {{boat.capacity}}\ndock: {{boat.dockNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_2e4b97c",
+        "columns": null
+      },
+      "id": "Field_hih0283"
+    },
+    {
+      "text": "## Customer\nOrder n.: {{order.id}}\nCustomer name: {{customer.name}}\nPhone number: {{customer.phoneNumber}}",
+      "type": "text",
+      "layout": {
+        "row": "Row_2e4b97c",
+        "columns": null
+      },
+      "id": "Field_27qweb1"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0lfj507",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}

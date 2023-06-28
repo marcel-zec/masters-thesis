@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "label": "Text field",
+      "type": "textfield",
+      "id": "Field_0z4xxg9",
+      "key": "start_day",
+      "disabled": true
+    },
+    {
+      "text": "{{start_day}",
+      "type": "text",
+      "id": "Field_1xposl7"
+    },
+    {
+      "label": "Text field",
+      "type": "textfield",
+      "id": "Field_1v22u0c",
+      "key": "start_month",
+      "disabled": true
+    }
+  ],
+  "type": "default",
+  "id": "Form_10fhad5",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "schemaVersion": 7
+}

@@ -1,0 +1,94 @@
+{
+  "components": [
+    {
+      "text": "# Boat selection",
+      "type": "text",
+      "id": "Field_166mjk4"
+    },
+    {
+      "label": "Number of people",
+      "type": "number",
+      "id": "Field_0e7nfyl",
+      "key": "field_12txrgn",
+      "validate": {
+        "required": false,
+        "min": 1,
+        "max": 10
+      }
+    },
+    {
+      "label": "Length",
+      "type": "number",
+      "id": "Field_0p41p5n",
+      "key": "field_0jukwng",
+      "validate": {
+        "min": 4,
+        "max": 30
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Sail boat",
+          "value": "sailboat"
+        },
+        {
+          "label": "Motor boat",
+          "value": "motorboat"
+        }
+      ],
+      "label": "Type",
+      "type": "radio",
+      "id": "Field_13brg4y",
+      "key": "boat_type",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Bavaria",
+          "value": "bavaria"
+        },
+        {
+          "label": "Beneteau",
+          "value": "beneteau"
+        }
+      ],
+      "label": "Sail boat",
+      "type": "select",
+      "id": "Field_0p14yvw",
+      "key": "field_0rncyux",
+      "properties": {}
+    },
+    {
+      "values": [
+        {
+          "label": "Highfield",
+          "value": "highfield"
+        }
+      ],
+      "label": "Motor boat",
+      "type": "select",
+      "id": "Field_13hkixb",
+      "key": "field_1ey053o"
+    },
+    {
+      "action": "submit",
+      "label": "Submit",
+      "type": "button",
+      "id": "Field_1s1y3gľ",
+      "key": "field_10momcml"
+    }
+  ],
+  "type": "default",
+  "id": "Form_12hr5aw",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.9.0"
+  },
+  "schemaVersion": 7
+}

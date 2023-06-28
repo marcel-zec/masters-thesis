@@ -1,0 +1,37 @@
+{
+    "paymentDepositRequest":{
+        "text":"We remind you that\nthe deposit for the order n.%o\nmust be paid before the 7th day from order creation.\n\nThe Charter company",
+        "_variables":["orderNumber"]
+    },
+    "paymentFullRequest":{
+        "text":"We remind you that\nfull price (%o EUR) for the order n.%o\nmust be paid before the 7th day from order creation.\n\nThe Charter company",
+        "_variables":["price","orderNumber"]
+    },
+    "cancelReservation":{
+        "text":"Unfortunately, I have to inform you\nthat we canceled your order n.%o\nbecause you did not pay the deposit.\n\nThe Charter company",
+        "_variables":["orderNumber"]
+    },
+    "cancelOrderNoRefund":{
+        "text":"Unfortunately, I have to inform you\nthat we canceled your order n.%o without refundation.\nFor further information, contact\nthe customer department at %o.\n\nThe Charter company",
+        "_variables":["orderNumber","infoPhoneNumber"]
+    },
+    "orderCompleted":{
+        "text":"Your order n.%o has been paid and completed.\nWe look forward to your arrival on %o\nArrival for boarding is required from %o to %o.\n\nThe Charter company",
+        "_variables":["orderNumber","cruiseStartAt","boardingStartTime", "boardingEndTime"]
+    },
+    "changedBoardingDate":{
+        "text":"Boarding date for order n.%o\nhas been changed to %o.\nArrival for boarding is required from %o to %o.\n\nThe Charter company",
+        "_variables":["orderNumber","movedBoardingDate","boardingStartTime", "boardingEndTime"]
+    },
+    "orderCanceledPenalty":{
+        "text":"We are sorry, but your order n.%o has been exceptionally cancelled.\nWe apologize for the caused problems. You will be refunded full price plus\n%o of the rental price and you are entitled to adequate\nfinancial compensation according to the general business condition.\n\nThe Charter company",
+        "_variables":["orderNumber","boardRefundPercentage"]
+    },
+    "orderExceptionallyTerminated":{
+        "text":"We apologize that we could not make the planned landing.\nYou will be contacted by phone regarding further information.\nWe apologize for the caused problems. You will be refunded full price plus\n%landRefundPercentage of the rental price and you are entitled to adequate financial\ncompensation according to the general business condition.\n\nThe Charter company"
+    },
+    "orderFinish":{
+        "text":"Your rental (order n.%o) has been successfully completed.\nWe look forward to your next cruise on one of our ships.\n\nThe Charter company",
+        "_variables":["orderNumber"]
+    }
+}
